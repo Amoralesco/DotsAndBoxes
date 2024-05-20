@@ -12,6 +12,7 @@
 	<title>Squares</title>
 	<script type='text/javascript' src='https://jgomezpe.github.io/konekti/src/konekti.js'></script>
 	<script type='text/javascript' src='squares.js'></script>
+	<script type='text/javascript' src='Andian.js'></script>
 </head>
 
 <body>
@@ -26,7 +27,9 @@ function KonektiMain(){
 	var client = new Environment()
     client.setPlayers({
         'rand1': new RandomPlayer(),
-        'rand2': new RandomPlayer()
+        'rand2': new RandomPlayer(),
+		'andian_0': new AndianBotRand(),
+		'andian_1': new AndianBotTerminateSquare()
         // Add your agent here: for example if you create a class "MyAgent" and your team is "RexTeam" add something like
         //'RexTeam': new MyAgent()
         // You will be able to call it from the interface using the name of your team playing with red or yellow pieces

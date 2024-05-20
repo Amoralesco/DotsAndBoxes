@@ -186,6 +186,8 @@ class Board{
     	  if(board[i][j]<0){
     	      if(board[i][j] == -1){ cr++ }else{ cy++ }
     	  }
+        console.log("Value of cr:", cr); // Imprime el valor de cr en la consola
+        console.log("Value of cy:", cy); // Imprime el valor de cy en la consola
     	if(cr+cy<board.length*board.length) return ' '
     	if(cr>cy) return 'R'
     	if(cy>cr) return 'Y'
